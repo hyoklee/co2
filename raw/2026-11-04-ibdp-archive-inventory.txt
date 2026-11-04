@@ -1,0 +1,113 @@
+IBDP archives from CO2DataShare, as downloaded by clio-core CAE on 2026-11-04 (PBS job 9039039).
+Location: /lus/flare/projects/IOWarp/hyoklee/co2datashare/ibdp/ (Aurora, ALCF)
+Dataset: https://co2datashare.org/dataset/illinois-basin-decatur-project-dataset  DOI 10.11582/2022.00017
+Generated with: unzip -Zl <zip>, summed per file extension. Uncompressed sizes.
+
+== ibdp_final_petrel_static_model_2021.zip  (37781751137 bytes zipped)
+  TOTAL     13631 files      76021.0 MB
+  zgy          32 files      59035.6 MB
+  ptd         247 files      10060.9 MB
+  zat        9206 files       4877.5 MB
+  zhz         904 files        547.0 MB
+  bulk         12 files        466.6 MB
+  bxml         84 files        416.7 MB
+  (none)     2331 files        271.7 MB
+  unrst         2 files        124.6 MB
+  dat         399 files         58.0 MB
+  init          2 files         53.7 MB
+  egrid         4 files         41.0 MB
+  grdecl       22 files         20.4 MB
+  prt           2 files         19.4 MB
+  xml         234 files          9.4 MB
+  txt          10 files          6.8 MB
+  eclrun        2 files          5.0 MB
+  png           2 files          2.3 MB
+  log           2 files          0.7 MB
+  pet           2 files          0.6 MB
+  bin          42 files          0.6 MB
+  dbprtx        2 files          0.4 MB
+  pdf           1 files          0.3 MB
+  msg           2 files          0.3 MB
+  miz           6 files          0.3 MB
+  ico           4 files          0.3 MB
+  unsmry        2 files          0.2 MB
+  inc          12 files          0.2 MB
+  h5            2 files          0.2 MB
+  db            4 files          0.2 MB
+  zip          32 files          0.1 MB
+  vp            2 files          0.0 MB
+  smspec        2 files          0.0 MB
+  sim           1 files          0.0 MB
+  rsspec        2 files          0.0 MB
+  rft           2 files          0.0 MB
+  out           2 files          0.0 MB
+  inspec        2 files          0.0 MB
+  eclend        2 files          0.0 MB
+  dbg           2 files          0.0 MB
+  data          2 files          0.0 MB
+  config        2 files          0.0 MB
+  blob          2 files          0.0 MB
+
+== ibdp_gis_data_and_georeferenced_imagery.zip  (13312364398 bytes zipped)
+  TOTAL       474 files      13501.3 MB
+  (none)      317 files       6444.2 MB
+  tif           8 files       5383.6 MB
+  ovr           8 files       1611.5 MB
+  atx          65 files         59.5 MB
+  spx          43 files          1.9 MB
+  pdf           1 files          0.3 MB
+  txt           8 files          0.2 MB
+  xml          16 files          0.1 MB
+  tfw           8 files          0.0 MB
+
+== ibdp_horizons-faults_petrel_2021.zip  (7674425 bytes zipped)
+  TOTAL        47 files         19.2 MB
+  ts           40 files         18.9 MB
+  pdf           1 files          0.3 MB
+  txt           6 files          0.0 MB
+
+== ibdp_reports.zip  (292289464 bytes zipped)
+  TOTAL        34 files        306.8 MB
+  pdf          24 files        296.1 MB
+  png           4 files         10.7 MB
+  txt           6 files          0.0 MB
+
+== ibdp_seismic.zip  (15437891729 bytes zipped)
+  TOTAL      7924 files      21976.3 MB
+  sgy           6 files      13019.0 MB
+  sg2        5399 files       8760.4 MB
+  sac        2472 files        151.6 MB
+  pdf           7 files         30.5 MB
+  x01           1 files          7.4 MB
+  txt          14 files          4.8 MB
+  r01           1 files          1.4 MB
+  seed         15 files          0.5 MB
+  sp1           2 files          0.3 MB
+  s01           1 files          0.2 MB
+  1             3 files          0.2 MB
+  xlsx          2 files          0.1 MB
+  db            1 files          0.1 MB
+
+== ibdp_selected_reports.zip  (352941394 bytes zipped)
+  TOTAL        37 files        372.3 MB
+  pdf          28 files        372.3 MB
+  txt           8 files          0.0 MB
+  db            1 files          0.0 MB
+
+== ibdp_well_information.zip  (322419753 bytes zipped)
+  TOTAL        51 files       1082.6 MB
+  pdf          23 files       1004.7 MB
+  las          12 files         68.5 MB
+  tif           1 files          8.4 MB
+  txt          11 files          0.9 MB
+  xlsx          1 files          0.1 MB
+  asc           1 files          0.1 MB
+  db            2 files          0.0 MB
+
+== seismic-event-catalog.zip  (9507198 bytes zipped)
+  TOTAL        10 files         11.7 MB
+  xlsx          2 files          9.4 MB
+  rdv           1 files          2.3 MB
+  txt           7 files          0.0 MB
+
+Every archive is a BagIt bag: bagit.txt, bag-info.txt, manifest-sha256.txt, manifest-sha512.txt, tagmanifest-*.txt, data/.
