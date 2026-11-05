@@ -1,0 +1,38 @@
+host x4001c6s0b0n0  Thu Nov  5 02:20:08 AM UTC 2026
+pstm-Depth.sgy: 3.64 GB, 602293 traces x 1451 samples; grid 265 x 2947 (77% filled); sequential read 1.24 GB/s
+  values: min -2.363e+04 max 2.34e+04 std 2685; zeros 2.2%
+  traces sorted by inline: True
+  wrote zstd3+shuffle 64x64x64: 2.61 GB in 10.8 s 
+  wrote zstd3+shuffle 8x256x64: 2.61 GB in 10.1 s 
+  wrote zstd3+shuffle 16x64x64: 2.70 GB in 10.4 s 
+  wrote zstd3+shuffle 32x32x128: 2.61 GB in 10.4 s 
+  wrote zstd3+shuffle 16x16x1451: 2.63 GB in 10.3 s 
+  wrote zstd3+shuffle 4x512x32: 2.69 GB in 10.2 s 
+
+  format                          size GB vs SEG-Y  inline s  xline s z-slice s
+  SEG-Y (as is)                      3.64     100%     0.073    0.005     3.047
+  zstd3+shuffle 64x64x64             2.61      72%     1.472    0.416     1.387
+  zstd3+shuffle 8x256x64             2.61      72%     0.297    1.189     1.893
+  zstd3+shuffle 16x64x64             2.70      74%     0.632    0.923     7.779
+  zstd3+shuffle 32x32x128            2.61      72%     0.774    2.680    17.929
+  zstd3+shuffle 16x16x1451           2.63      72%     0.368    0.137     4.343
+  zstd3+shuffle 4x512x32             2.69      74%     0.231    1.338     8.978
+Porosity-NN-Depth.sgy: 2.79 GB, 461472 traces x 1451 samples; grid 195 x 2560 (92% filled); sequential read 1.01 GB/s
+  values: min -0.01416 max 0.2615 std 0.01705; zeros 0.0%
+  traces sorted by inline: True
+  wrote zstd3+shuffle 64x64x64: 0.32 GB in 5.7 s 
+  wrote zstd3+shuffle 8x256x64: 0.32 GB in 5.1 s 
+  wrote zstd3+shuffle 16x64x64: 0.33 GB in 4.9 s 
+  wrote zstd3+shuffle 32x32x128: 0.29 GB in 5.1 s 
+  wrote zstd3+shuffle 16x16x1451: 0.27 GB in 4.5 s 
+  wrote zstd3+shuffle 4x512x32: 0.38 GB in 5.6 s 
+
+  format                          size GB vs SEG-Y  inline s  xline s z-slice s
+  SEG-Y (as is)                      2.79     100%     0.071    0.003     2.357
+  zstd3+shuffle 64x64x64             0.32      12%     0.877    0.164     0.428
+  zstd3+shuffle 8x256x64             0.32      12%     0.212    0.368     0.595
+  zstd3+shuffle 16x64x64             0.33      12%     0.416    0.195     0.649
+  zstd3+shuffle 32x32x128            0.29      11%     0.591    0.148     0.596
+  zstd3+shuffle 16x16x1451           0.27      10%     0.214    0.087     1.792
+  zstd3+shuffle 4x512x32             0.38      14%     0.155    0.799     0.577
+done Thu Nov  5 02:27:45 AM UTC 2026

@@ -60,6 +60,7 @@ These are ideas, not results.
   be used without commercial software.
   - ZGY and Petrel `.ptd` files need OpenZGY or Petrel.
   - SEG-Y, LAS and SAC can be read with open tools such as segyio, lasio and ObsPy.
+  - Measured savings and read speeds for SEG-Y and SEG-2 in HDF5 are in [[ibdp-hdf5-storage]].
 - **I/O benchmark.** Have CAE read SEG-Y traces and waveforms into CTE blobs. About
   100 GB of real data makes a test case for I/O and compression.
 - **Seismicity analysis.** Relate the event catalog to injection in time and depth, or
@@ -70,4 +71,4 @@ These are ideas, not results.
   to coupled flow and fault-stress models such as Luu et al. (2022).
 - **Integrity check.** Verify every file against its BagIt SHA-256 manifest.
 
-Related: [[ibdp-publications]], [[ibdp-injection-and-seismicity]].
+Related: [[ibdp-publications]], [[ibdp-injection-and-seismicity]], [[ibdp-hdf5-storage]].

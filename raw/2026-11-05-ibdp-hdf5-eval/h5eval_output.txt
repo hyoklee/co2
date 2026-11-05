@@ -1,0 +1,62 @@
+host x4414c0s2b0n0  Thu Nov  5 01:59:22 AM UTC 2026
+100 SEG-2 files, 160.1 MB; shapes [(84, 1000), (84, 4000), (94, 4000), (109, 4000)]; dtypes {'<f4'}
+read all (100 opens) with Python parser: 4.30 s
+HDF5 none                     156.7 MB (98% of SEG-2), read all 0.04 s
+HDF5 gzip4+shuffle            124.7 MB (78% of SEG-2), read all 0.59 s
+HDF5 zstd3+shuffle            125.9 MB (79% of SEG-2), read all 0.35 s
+HDF5 blosc-zstd+bitshuffle    129.6 MB (81% of SEG-2), read all 0.14 s
+Decatur_IBDP_GM1_3DVSP_Final_Migration_Depth_09-05-19.sgy: 0.08 GB, 12826 traces x 1501 samples; grid 121 x 106 (100% filled); sequential read 0.53 GB/s
+  values: min -2.108 max 1.682 std 0.3103; zeros 45.5%
+  traces sorted by inline: True
+  wrote contiguous: 0.08 GB in 0.1 s 
+  wrote gzip4+shuffle: 0.03 GB in 1.3 s 
+  wrote zstd3+shuffle: 0.03 GB in 0.2 s 
+  wrote blosc-lz4+bitshuffle: 0.04 GB in 0.1 s 
+  wrote zfp-lossy(tol=1e-3 std): 0.02 GB in 0.3 s max err 2.17e-04 std, SNR 89 dB
+  wrote zfp-lossy(tol=1e-2 std): 0.01 GB in 0.3 s max err 1.72e-03 std, SNR 71 dB
+
+  format                      size GB vs SEG-Y  inline s  xline s z-slice s
+  SEG-Y (as is)                  0.08     100%     0.002    0.002     0.119
+  contiguous                     0.08      97%     0.004    0.013     0.040
+  gzip4+shuffle                  0.03      42%     0.202    0.203     0.038
+  zstd3+shuffle                  0.03      41%     0.088    0.088     0.053
+  blosc-lz4+bitshuffle           0.04      48%     0.080    0.068     0.025
+  zfp-lossy(tol=1e-3 std)        0.02      20%     0.137    0.154     0.042
+  zfp-lossy(tol=1e-2 std)        0.01      14%     0.122    0.118     0.022
+pstm-Depth.sgy: 3.64 GB, 602293 traces x 1451 samples; grid 265 x 2947 (77% filled); sequential read 1.26 GB/s
+  values: min -2.363e+04 max 2.34e+04 std 2685; zeros 2.2%
+  traces sorted by inline: True
+  wrote contiguous: 4.54 GB in 3.4 s 
+  wrote gzip4+shuffle: 2.65 GB in 86.3 s 
+  wrote zstd3+shuffle: 2.61 GB in 10.6 s 
+  wrote blosc-lz4+bitshuffle: 2.97 GB in 6.4 s 
+  wrote zfp-lossy(tol=1e-3 std): 1.31 GB in 22.1 s max err 2.37e-04 std, SNR 90 dB
+  wrote zfp-lossy(tol=1e-2 std): 0.98 GB in 19.8 s max err 1.85e-03 std, SNR 72 dB
+
+  format                      size GB vs SEG-Y  inline s  xline s z-slice s
+  SEG-Y (as is)                  3.64     100%     0.073    0.005     3.010
+  contiguous                     4.54     125%     0.022    0.026     1.827
+  gzip4+shuffle                  2.65      73%     4.511    0.715     2.150
+  zstd3+shuffle                  2.61      72%     1.377    0.528     1.305
+  blosc-lz4+bitshuffle           2.97      82%     1.038    0.366     1.409
+  zfp-lossy(tol=1e-3 std)        1.31      36%     4.372    0.697     1.653
+  zfp-lossy(tol=1e-2 std)        0.98      27%     3.692    0.579     1.229
+Porosity-NN-Depth.sgy: 2.79 GB, 461472 traces x 1451 samples; grid 195 x 2560 (92% filled); sequential read 1.18 GB/s
+  values: min -0.01416 max 0.2615 std 0.01705; zeros 0.0%
+  traces sorted by inline: True
+  wrote contiguous: 2.90 GB in 2.2 s 
+  wrote gzip4+shuffle: 0.33 GB in 24.4 s 
+  wrote zstd3+shuffle: 0.32 GB in 5.5 s 
+  wrote blosc-lz4+bitshuffle: 0.53 GB in 4.4 s 
+  wrote zfp-lossy(tol=1e-3 std): 0.80 GB in 16.4 s max err 2.81e-04 std, SNR 108 dB
+  wrote zfp-lossy(tol=1e-2 std): 0.59 GB in 14.6 s max err 2.09e-03 std, SNR 90 dB
+
+  format                      size GB vs SEG-Y  inline s  xline s z-slice s
+  SEG-Y (as is)                  2.79     100%     0.084    0.003     2.240
+  contiguous                     2.90     104%     0.016    0.057     0.794
+  gzip4+shuffle                  0.33      12%     2.171    0.290     0.672
+  zstd3+shuffle                  0.32      12%     0.897    0.138     0.514
+  blosc-lz4+bitshuffle           0.53      19%     0.803    0.176     0.632
+  zfp-lossy(tol=1e-3 std)        0.80      29%     2.818    0.400     0.998
+  zfp-lossy(tol=1e-2 std)        0.59      21%     2.372    0.361     0.805
+done Thu Nov  5 02:08:59 AM UTC 2026

@@ -1,0 +1,28 @@
+host=x4001c4s0b0n0 clio-core: 2abb81e72 Merge pull request #1330 from iowarp/py315-wheels
+=== 1. original SEG-Y
+PASS: clio_cae (SEG-Y) exits 0
+SEG-Y: 2789140368 of 2789140368 bytes in 2660 blobs (tag 0.1), 5s
+PASS: all SEG-Y bytes landed
+=== 2. run: SEG-Y -> HDF5, then ingest
+omni_loader.cc:204 INFO 1827054 LoadOmni     run: /lus/flare/projects/IOWarp/hyoklee/h5eval/tools/sgy2h5.sh -> /lus/flare/projects/IOWarp/hyoklee/omni_run_e2e/ibdp/out/Porosity-NN-Depth.h5
+omni_run.cc:165 INFO 1827054 ExecuteRunSteps Running transfer 1: /lus/flare/projects/IOWarp/hyoklee/h5eval/tools/sgy2h5.sh /lus/flare/projects/IOWarp/hyoklee/h5eval/sgy/Porosity-NN-Depth.sgy /lus/flare/projects/IOWarp/hyoklee/omni_run_e2e/ibdp/out/Porosity-NN-
+sgy2h5: Porosity-NN-Depth.sgy 2.79 GB -> Porosity-NN-Depth.h5 0.333 GB (8.4x); 461472 traces on a 195 x 2560 x 1451 grid, chunks (8, 256, 64); converted in 45 s, all 461472 traces verified
+omni_run.cc:186 INFO 1827054 ExecuteRunSteps   transfer 1 now ingests file::/lus/flare/projects/IOWarp/hyoklee/omni_run_e2e/ibdp/out/Porosity-NN-Depth.h5 (333150770 bytes)
+PASS: clio_cae (run: HDF5) exits 0
+PASS: run step verified every trace
+HDF5: 333150770 of 333150770 bytes in 318 blobs (tag 0.2), 65s including the conversion
+PASS: all HDF5 bytes landed
+replica 0: size rc=0 size=1048576 read rc=0 head=".HDF............................" zeros=20
+PASS: stored blob starts with the HDF5 signature
+=== 3. what a reader gets: the run_out file vs the SEG-Y
+HDF5 layout: (195, 2560, 1451) (8, 256, 64) gzip attrs: ['crossline_byte', 'crossline_origin', 'inline_byte', 'inline_origin', 'sample_interval_us', 'samples_per_trace', 'segy_binary_header', 'segy_text_header', 'source_file']
+SEG-Y depth slice: 2.94 s
+HDF5 depth slice: 1.22 s
+=== summary
+                                       bytes in CTE    seconds
+  original SEG-Y                         2789140368          5
+  run: -> HDF5 (incl. conversion)         333150770         65
+  ratio: 8.4x smaller
+=== 6 passed, 0 failed
+
+[exited with code 0]

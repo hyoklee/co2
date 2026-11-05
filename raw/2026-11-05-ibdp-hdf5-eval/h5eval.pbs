@@ -1,0 +1,20 @@
+#PBS -N ibdp_h5eval
+#PBS -l select=1
+#PBS -l walltime=01:00:00
+#PBS -l filesystems=home:flare
+#PBS -q capacity
+#PBS -A IOWarp
+#PBS -o /home/hyoklee/wrp/run/ibdp_h5eval.out
+#PBS -e /home/hyoklee/wrp/run/ibdp_h5eval.err
+set -u
+S=/lus/flare/projects/IOWarp/hyoklee/h5eval/tools
+W=/lus/flare/projects/IOWarp/hyoklee/h5eval
+PY="/home/hyoklee/miniconda3/envs/miv/bin/python -I -c"
+RUN() { $PY "import sys; sys.path.insert(0,'$S/pylib'); sys.argv=sys.argv[1:]; exec(open(sys.argv[0]).read())" "$@"; }
+cd $W
+echo "host $(hostname)  $(date)"
+RUN $S/sg2eval.py $W/sg2 $W/sg2.h5
+RUN $S/h5eval.py $W/sgy/Decatur_IBDP_GM1_3DVSP_Final_Migration_Depth_09-05-19.sgy $W/h5/vsp 9 13
+RUN $S/h5eval.py $W/sgy/pstm-Depth.sgy $W/h5/pstm 17 25
+RUN $S/h5eval.py $W/sgy/Porosity-NN-Depth.sgy $W/h5/porosity 17 25
+echo "done $(date)"

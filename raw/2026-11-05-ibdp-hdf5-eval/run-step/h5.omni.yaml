@@ -1,0 +1,12 @@
+# IBDP porosity volume (ibdp_seismic.zip:
+#   IBDP_Seismic/data/IBDP_3D_Seismic_Volume_Reprocessed/Depth-PSTM/Porosity-NN-Depth.sgy),
+# ingested twice: as the original SEG-Y, and through a run: step that converts it
+# to gzip-compressed, chunked HDF5 and verifies every trace first.
+# This file: a run: step converts it to HDF5 (gzip + shuffle, 8x256x64 chunks) and
+# verifies every trace; CAE ingests the HDF5 file.
+transfers:
+  - src: "file::/lus/flare/projects/IOWarp/hyoklee/h5eval/sgy/Porosity-NN-Depth.sgy"
+    dst: "iowarp::ibdp_porosity_h5"
+    format: "binary"
+    run: "/lus/flare/projects/IOWarp/hyoklee/h5eval/tools/sgy2h5.sh"
+    run_out: "${IBDP_RUN_OUT}/Porosity-NN-Depth.h5"

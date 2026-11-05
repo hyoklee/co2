@@ -1,0 +1,18 @@
+#PBS -N ibdp_h5chunks
+#PBS -l select=1
+#PBS -l walltime=01:00:00
+#PBS -l filesystems=home:flare
+#PBS -q capacity
+#PBS -A IOWarp
+#PBS -o /home/hyoklee/wrp/run/ibdp_h5chunks.out
+#PBS -e /home/hyoklee/wrp/run/ibdp_h5chunks.err
+set -u
+S=/lus/flare/projects/IOWarp/hyoklee/h5eval/tools
+W=/lus/flare/projects/IOWarp/hyoklee/h5eval
+PY="/home/hyoklee/miniconda3/envs/miv/bin/python -I -c"
+RUN() { $PY "import sys; sys.path.insert(0,'$S/pylib'); sys.argv=sys.argv[1:]; exec(open(sys.argv[0]).read())" "$@"; }
+cd $W
+echo "host $(hostname)  $(date)"
+RUN $S/h5chunks.py $W/sgy/pstm-Depth.sgy $W/h5c/pstm 17 25
+RUN $S/h5chunks.py $W/sgy/Porosity-NN-Depth.sgy $W/h5c/porosity 17 25
+echo "done $(date)"
