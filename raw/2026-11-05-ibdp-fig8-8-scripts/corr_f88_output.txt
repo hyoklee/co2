@@ -1,0 +1,81 @@
+== 1. Checks on the digitization ==
+IBDP rate integrated over the record: 900 kt (report total 999 kt; cumulative line peaks at 999 kt)
+ICCS rate integrated: 1921 kt; ICCS cumulative line ends at 2084 kt
+IBDP median rate 38.3 T/hr = 919 t/day; ICCS median 57.5 T/hr = 1380 t/day
+
+== 2. Pressure by phase (median psi) ==
+wb1: first month (Nov-Dec 2011)=3244  injection plateau 2012-2014=3330  6 months after end=nan  late post-injection 2016-17=nan
+wb2: first month (Nov-Dec 2011)=3253  injection plateau 2012-2014=3327  6 months after end=3222  late post-injection 2016-17=3200
+wb3: first month (Nov-Dec 2011)=3199  injection plateau 2012-2014=3292  6 months after end=nan  late post-injection 2016-17=nan
+wb4: first month (Nov-Dec 2011)=3124  injection plateau 2012-2014=3152  6 months after end=3123  late post-injection 2016-17=3120
+wb5: first month (Nov-Dec 2011)=3052  injection plateau 2012-2014=3072  6 months after end=nan  late post-injection 2016-17=nan
+wb6: first month (Nov-Dec 2011)=3014  injection plateau 2012-2014=3028  6 months after end=3027  late post-injection 2016-17=3020
+
+== 3. Monthly events vs pressure and rate, during IBDP injection ==
+events vs wb2       n=33: same month Pearson +0.19 Spearman -0.01; next month Pearson +0.36 Spearman +0.27
+events vs wb1       n=23: same month Pearson +0.17 Spearman +0.18; next month Pearson -0.09 Spearman +0.03
+events vs q         n=35: same month Pearson +0.03 Spearman -0.04; next month Pearson +0.08 Spearman +0.27
+events vs shut_cols n=35: same month Pearson -0.15 Spearman +0.09; next month Pearson -0.13 Spearman -0.13
+
+== 4. After injection: events vs pressure decay (Dec 2014 - Mar 2017) ==
+events vs WB2 pressure, n=23 months: Pearson +0.61, Spearman +0.60
+  2014-12: WB2 3236 psi, 55 events
+  2015-03: WB2 3222 psi, 30 events
+  2015-06: WB2 3222 psi, 3 events
+  2015-09: WB2 3215 psi, 11 events
+  2015-12: WB2 3204 psi, 7 events
+  2016-03: WB2 3199 psi, 5 events
+  2016-08: WB2 3200 psi, 3 events
+  2017-02: WB2 3191 psi, 5 events
+
+== 5. Shut-ins: event rate around rate drops ==
+29 shut-in episodes (rate line below 15 T/hr), Dec 2011 - Nov 2014
+mean events/day: 14 d before 5.72, during 3.81, 14 d after 3.89
+  2012-03-16..2012-03-27: 7.21 / 2.57 / 1.36
+  2012-04-17..2012-04-20: 1.29 / 1.50 / 2.21
+  2012-05-02..2012-05-11: 1.79 / 3.25 / 1.43
+  2012-05-16..2012-05-19: 2.86 / 2.00 / 1.79
+  2012-07-06..2012-07-08: 31.00 / 4.20 / 6.50
+  2012-07-17..2012-07-23: 6.07 / 5.44 / 5.43
+  2012-08-28..2012-09-05: 1.71 / 2.45 / 6.36
+  2012-09-26..2012-10-08: 6.29 / 3.00 / 1.50
+  2012-11-30..2012-12-09: 2.43 / 1.67 / 2.86
+  2012-12-20..2012-12-23: 3.21 / 0.50 / 1.71
+  2013-02-17..2013-02-20: 5.64 / 1.67 / 6.71
+  2013-03-04..2013-03-07: 5.71 / 4.17 / 2.43
+  2013-05-11..2013-06-09: 1.29 / 3.03 / 1.86
+  2013-06-27..2013-07-09: 1.86 / 1.33 / 7.50
+  2013-08-07..2013-08-13: 1.64 / 0.89 / 1.00
+  2013-08-22..2013-08-28: 0.93 / 1.00 / 1.36
+  2013-09-29..2013-10-23: 4.29 / 4.89 / 2.64
+  2013-10-29..2013-11-04: 4.57 / 2.67 / 3.71
+  2013-12-24..2013-12-27: 4.00 / 4.83 / 3.79
+  2014-01-28..2014-02-09: 9.21 / 4.80 / 3.50
+  2014-02-18..2014-02-21: 3.50 / 4.33 / 3.57
+  2014-04-09..2014-04-15: 4.86 / 2.44 / 3.43
+  2014-05-23..2014-05-26: 2.71 / 1.67 / 5.00
+  2014-06-13..2014-06-16: 5.07 / 3.83 / 5.57
+  2014-07-18..2014-07-21: 6.86 / 10.00 / 7.79
+  2014-08-16..2014-08-19: 12.07 / 11.00 / 11.14
+  2014-09-12..2014-09-15: 9.57 / 17.33 / 4.14
+  2014-09-24..2014-09-30: 15.21 / 3.00 / 4.79
+  2014-11-04..2014-11-10: 2.93 / 1.11 / 1.71
+
+== 6. ICCS period (catalog runs to Jul 2018) ==
+12 months before ICCS: 74 located events
+first 12 months of ICCS (from Jul 2017): 108 located events
+
+== 7. Shut-in test against random windows ==
+median during/before rate ratio: shut-ins 0.73, random windows 0.99 (5-95%: 0.75-1.28); one-sided p = 0.041
+median events/day: before 4.29, during 3.00, after 3.50
+
+== 8. Sensitivity of the shut-in test ==
+threshold 10 T/hr, baseline  7 d: 28 episodes, ratio 0.95, p = 0.348
+threshold 10 T/hr, baseline 14 d: 28 episodes, ratio 0.75, p = 0.058
+threshold 10 T/hr, baseline 28 d: 28 episodes, ratio 0.79, p = 0.201
+threshold 15 T/hr, baseline  7 d: 29 episodes, ratio 0.89, p = 0.192
+threshold 15 T/hr, baseline 14 d: 29 episodes, ratio 0.73, p = 0.047
+threshold 15 T/hr, baseline 28 d: 29 episodes, ratio 0.76, p = 0.113
+threshold 20 T/hr, baseline  7 d: 32 episodes, ratio 0.79, p = 0.038
+threshold 20 T/hr, baseline 14 d: 32 episodes, ratio 0.73, p = 0.026
+threshold 20 T/hr, baseline 28 d: 32 episodes, ratio 0.65, p = 0.020
