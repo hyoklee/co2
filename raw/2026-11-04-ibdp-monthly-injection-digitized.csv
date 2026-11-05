@@ -1,0 +1,42 @@
+# IBDP monthly CO2 injection, read off Figure 8-1 ("Cumulative injection record for the IBDP", PDF page 200, printed page 165)
+# of _IBDP_Report_Final_07_July_2021_rev1.pdf in ibdp_reports.zip (CO2DataShare, DOI 10.11582/2022.00017).
+# Digitized 2026-11-04 from the embedded 961x605 chart image; 0 kt = row 506, 50 kt = row 39.5; about +/-0.1 kt per bar.
+# Sum 997.1 kt vs the report's stated total of 999,215 tonnes (0.2% low). 2011-11 is a partial month (injection began 17 Nov).
+month,injected_kt_digitized
+2011-11,6.86
+2011-12,27.01
+2012-01,29.37
+2012-02,27.33
+2012-03,23.37
+2012-04,29.26
+2012-05,25.19
+2012-06,28.94
+2012-07,29.80
+2012-08,31.83
+2012-09,23.79
+2012-10,23.26
+2012-11,29.69
+2012-12,24.65
+2013-01,31.62
+2013-02,28.62
+2013-03,17.36
+2013-04,31.08
+2013-05,28.30
+2013-06,21.44
+2013-07,26.90
+2013-08,30.12
+2013-09,28.51
+2013-10,25.72
+2013-11,29.58
+2013-12,35.48
+2014-01,30.98
+2014-02,20.04
+2014-03,25.94
+2014-04,28.40
+2014-05,32.15
+2014-06,28.51
+2014-07,30.98
+2014-08,30.55
+2014-09,30.44
+2014-10,17.79
+2014-11,26.26

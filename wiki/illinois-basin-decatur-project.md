@@ -6,6 +6,8 @@ Illinois State Geological Survey (ISGS), with Schlumberger Carbon Services and A
 About 1 million tonnes of supercritical CO2 went into the base of the Mt. Simon Sandstone, a
 saline sandstone about 500 m thick, from November 2011 to November 2014.
 Source: [raw/2026-11-04-ibdp-web-search.md](../raw/2026-11-04-ibdp-web-search.md).
+The final IBDP report gives the exact total: 999,215 tonnes, injected from 17 Nov 2011 to
+26 Nov 2014. See [[ibdp-injection-and-seismicity]] for the monthly record.
 
 The injection caused microearthquakes, mostly small (about Mw −2 to 1) and mostly in the
 basement below the reservoir. See [[ibdp-publications]] for the studies.
@@ -37,7 +39,7 @@ Sizes below are unzipped. Source:
 | `ibdp_selected_reports.zip` | 372 MB | 28 PDF reports |
 | `ibdp_reports.zip` | 307 MB | 24 PDF reports, figures |
 | `ibdp_horizons-faults_petrel_2021.zip` | 19 MB | 40 GOCAD `.ts` surfaces (horizons and faults) |
-| `seismic-event-catalog.zip` | 12 MB | ISGS microseismic event catalog (2 Excel files) and a `.rdv` file |
+| `seismic-event-catalog.zip` | 12 MB | ISGS microseismic event catalog, 17 Nov 2011 – 2 Jul 2018: 19,579 detected and 5,397 located events, Mw −2.1 to 1.2 (2 Excel files and a `.rdv` file) |
 
 ## Copy on Aurora (ALCF)
 
@@ -62,9 +64,10 @@ These are ideas, not results.
   100 GB of real data makes a test case for I/O and compression.
 - **Seismicity analysis.** Relate the event catalog to injection in time and depth, or
   re-detect events in the continuous borehole data. Others have done this with ML
-  (see [[ibdp-publications]]).
+  (see [[ibdp-publications]]). A first comparison of monthly injection with event counts is
+  in [[ibdp-injection-and-seismicity]].
 - **Reservoir and geomechanics.** The static model, wells and fault surfaces are the inputs
   to coupled flow and fault-stress models such as Luu et al. (2022).
 - **Integrity check.** Verify every file against its BagIt SHA-256 manifest.
 
-Related: [[ibdp-publications]].
+Related: [[ibdp-publications]], [[ibdp-injection-and-seismicity]].

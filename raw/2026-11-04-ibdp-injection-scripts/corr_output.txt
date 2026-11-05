@@ -1,0 +1,10 @@
+all located  monthly vs injected (n=36): Pearson +0.07, Spearman -0.04
+             lag 1 month: Pearson +0.27, Spearman +0.41
+Mw>=0        monthly vs injected (n=36): Pearson +0.14, Spearman +0.13
+             lag 1 month: Pearson +0.10, Spearman +0.37
+located events during injection months: 4853, after (Dec 2014 - Jul 2018): 544
+cumulative events vs cumulative injected: Pearson +0.987
+  2011:   33.9 kt injected,     2 located events,   0.1 events/kt
+  2012:  326.5 kt injected,  1949 located events,   6.0 events/kt
+  2013:  334.7 kt injected,  1064 located events,   3.2 events/kt
+  2014:  302.0 kt injected,  1838 located events,   6.1 events/kt

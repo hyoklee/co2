@@ -25,6 +25,10 @@ which was built from abstracts, bibliographic records and slides; no full text w
   stratigraphy shape the microseismicity.
 - **Couëslan et al.:** borehole geophone arrays in two wells found events in the
   Mt. Simon Sandstone, the pre-Mt. Simon unit and the Precambrian basement.
+- **Dando et al. (2021, *Geophysical Journal International* 227(2): 1094–1122):**
+  doi:10.1093/GJI/GGAB255. A modified double-difference relocation of the downhole-monitored
+  events. The catalog's relocated subset comes from this paper. Source:
+  [raw/2026-11-04-ibdp-injection-notes.md](../raw/2026-11-04-ibdp-injection-notes.md).
 
 **Where they differ:** Luu et al. stress pressure with a poroelastic part. The MIT-led
 study stresses pore-pressure diffusion along faults. Both tie the events to pressure from
@@ -44,3 +48,5 @@ These are mostly DOE reports and posters rather than journal papers.
 
 **Gap:** the search found no paper that uses the CO2DataShare release itself for machine
 learning.
+
+Related: [[illinois-basin-decatur-project]], [[ibdp-injection-and-seismicity]].
